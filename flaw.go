@@ -48,6 +48,11 @@ func SelectIgnoreNoRow(err error, debugMsg ...string) error {
 	return nil
 }
 
+//CreateError : error occured while creating table
+func CreateError(err error, debugMsg ...string) *Error {
+	return newError(err, CreateCode, debugMsg...)
+}
+
 //InsertError : error occured while insert query
 func InsertError(err error, debugMsg ...string) *Error {
 	return newError(err, InsertCode, debugMsg...)

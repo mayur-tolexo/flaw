@@ -15,6 +15,7 @@ const (
 	MiscCode
 	ConnCode
 	TxCode
+	CreateCode
 	SelectCode
 	InsertCode
 	UpdateCode
@@ -40,6 +41,7 @@ func init() {
 		MiscCode:      ServerErrorMsg,
 		ConnCode:      ServerErrorMsg,
 		TxCode:        ServerErrorMsg,
+		CreateCode:    ServerErrorMsg,
 		SelectCode:    ServerErrorMsg,
 		InsertCode:    ServerErrorMsg,
 		UpdateCode:    ServerErrorMsg,
