@@ -23,6 +23,11 @@ func SetDebug(flag bool) {
 	debug = flag
 }
 
+//SetTraceDepth will set trace depth
+func SetTraceDepth(d int) {
+	traceDepth = d
+}
+
 //newError : Create new *Error object
 func newError(err error, code int, debugMsg ...string) *Error {
 	tracePath := ""
