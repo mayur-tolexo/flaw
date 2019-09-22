@@ -68,6 +68,16 @@ func DeleteError(err error, debugMsg ...string) *Error {
 	return newError(err, DeleteCode, debugMsg...)
 }
 
+//DropError : error occured while drop query
+func DropError(err error, debugMsg ...string) *Error {
+	return newError(err, DropCode, debugMsg...)
+}
+
+//ExecError : error occured while exec query
+func ExecError(err error, debugMsg ...string) *Error {
+	return newError(err, ExecCode, debugMsg...)
+}
+
 //TxError : error occured while starting transaction
 func TxError(err error, debugMsg ...string) *Error {
 	return newError(err, TxCode, debugMsg...)

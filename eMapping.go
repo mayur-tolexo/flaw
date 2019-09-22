@@ -20,6 +20,8 @@ const (
 	InsertCode
 	UpdateCode
 	DeleteCode
+	DropCode
+	ExecCode
 )
 
 //msg constant
@@ -46,5 +48,7 @@ func init() {
 		InsertCode:    ServerErrorMsg,
 		UpdateCode:    ServerErrorMsg,
 		DeleteCode:    ServerErrorMsg,
+		DropCode:      ServerErrorMsg,
+		ExecCode:      ServerErrorMsg,
 	}
 }
