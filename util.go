@@ -38,6 +38,9 @@ func newError(err error, code int, debugMsg ...string) *Error {
 	}
 
 	dMsg := strings.Join(debugMsg, " ")
+	if err != nil {
+		dMsg += " " + err.Error()
+	}
 	msg, exists := errMap[code]
 	if !exists {
 		msg = dMsg
